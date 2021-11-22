@@ -48,8 +48,8 @@ void Ex3(char *str){
             }
             if(wlen<min){
                 max=wlen;
-                startmax=start;
-                endmax=end;
+                startmin=start;
+                endmin=end;
             }
 			end++;
 			start=end;
