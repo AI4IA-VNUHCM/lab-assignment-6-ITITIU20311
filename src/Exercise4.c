@@ -35,7 +35,7 @@ void Ex4(char *str){
 			}
 			i--;
 			len--;
-			}
+		}
 	}
 	printf("%s",str);
 
