@@ -11,6 +11,8 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include <stddef.h>
+
 
 int sosanh(const char *s1, const char *s2)
 {
