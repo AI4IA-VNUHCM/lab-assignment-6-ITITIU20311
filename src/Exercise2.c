@@ -17,7 +17,7 @@ void Ex2(int n, char *str[]){
 	for(int i=0;i<=n-2;i++){
 		for(int j=i+1;j<=n-1;j++){
 			if(strcmp(str[i],str[j])==1){
-				char x[100]="";
+				char *x[100];
 				x=str[i];
 				str[i]=str[j];
 				str[j]=x;
