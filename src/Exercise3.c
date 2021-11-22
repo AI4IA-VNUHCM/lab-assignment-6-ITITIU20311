@@ -14,7 +14,7 @@ Ex:
 #include <string.h>
 void printword(char *str,int start,int end ){
 	int len = strlen(str);
-	for(int i=start;i<=end;i++){
+	for(int i=start;i<=end-1;i++){
 		printf("%c",str[i]);
 	}
 
