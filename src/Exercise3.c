@@ -48,6 +48,7 @@ void Ex3(char *str){
 			start=end+2;
 		}
 	}
+	printf("%d",max);
 }
 
 int main(int argc, char *argv[]) {
