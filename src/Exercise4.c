@@ -25,11 +25,17 @@ void Ex4(char *str){
 	int end=len-1;
 	int count;
 	while(str[end]==' '){
-		for(int i=end; i<len; i++){
-    		str[i]=str[i+1];
-		}
-	len--;
-	end--;
+		str[end]='\0';
+		end=end-1;
+	}
+	for(int i = 0; i < len; i++){
+		if(str[i]== ' ' && str[i+1]==' ') {
+			for(int j = i + 1; j < len; j++) {
+				str[j] = str[j + 1];
+			}
+			i--;
+			len--;
+			}
 	}
 	printf("%s",str);
 
