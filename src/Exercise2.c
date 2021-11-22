@@ -22,7 +22,17 @@ int sosanh(const char *s1, const char *s2)
 
 void Ex2(int n, char *str[]){
 	//Your codes here
-	
+	for(int i=0;i<=n-2;i++){
+		for(int j=i+1;j<=n-1;j++){
+			int xet=sosanh(str[i],str[j]);
+			if(xet==-1){
+				char x[]="aaaaaaaaaaa";
+				strcpy(x,str[i]);
+				strcpy(str[i],str[j]);
+				strcpy(str[j],x);
+			}
+		}
+	}
 	for(int i=0;i<=n-1;i++){
 		printf(" %s",str[i]);
 	}
