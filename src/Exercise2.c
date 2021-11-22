@@ -52,7 +52,7 @@ void Ex2(int n, char *str[]){
 		for(int j=i+1;j<=n-1;j++){
 			int xet=sosanh(str[i],str[j]);
 			if(xet==1){
-				char x[]="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+				char x[100]="";
 				copy(x,str[i]);
 				copy(str[i],str[j]);
 				copy(str[j],x);
