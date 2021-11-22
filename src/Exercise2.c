@@ -24,7 +24,9 @@ void Ex2(int n, char *str[]){
 			}
 		}
 	}
-	
+	for(int i=0;i<=n-1;i++){
+		printf("%c",str[i]);
+	}
 }
 
 int main(int argc, char *argv[]) {
