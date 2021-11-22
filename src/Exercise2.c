@@ -23,7 +23,7 @@ int sosanh(const char *s1, const char *s2)
 }
 char* copy(const char* source)
 {
-    char* strcopy[];
+    char strcopy[];
 	int len = strlen(source);
 	for(int i=0;i<=len;i++){
 		strcopy[i]=source[i];
