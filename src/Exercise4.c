@@ -15,7 +15,24 @@ Ex:
 
 void Ex4(char *str){
 	//Your codes here
-	
+	int len=strlen(str);
+	int start=0;
+	while(str[start]==' '){
+		for(int i = 0; i <= len; i++) {
+		str[i] = str[i + 1];
+	}
+	}
+	int end=len-1;
+	int count;
+	while(str[end]==' '){
+		for(int i=end; i<len; i++){
+    		str[i]=str[i+1];
+		}
+	len--;
+	end--;
+	}
+	printf("%s",str);
+
 }
 
 int main(int argc, char *argv[]) {
