@@ -58,7 +58,7 @@ void Ex3(char *str){
 	}
 	printf("Shortest word: ");
 	printword(str,startmin,endmin);
-	printf("\n")
+	printf("\n");
 	printf("Longest word: ");
 	printword(str,startmax,endmax);
 }
