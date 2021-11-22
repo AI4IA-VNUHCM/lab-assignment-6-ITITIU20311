@@ -51,7 +51,8 @@ void Ex3(char *str){
                 startmax=start;
                 endmax=end;
             }
-
+			end++;
+			start=end;
 			
 		}
 	}
