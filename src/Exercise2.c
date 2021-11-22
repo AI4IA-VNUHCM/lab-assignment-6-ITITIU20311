@@ -28,7 +28,7 @@ char* copy(const char* source)
 	for(int i=0;i<=len;i++){
 		strcopy[i]=source[i];
 	}
-	return strcopy;
+	return strcopy[len];
 }
 void Ex2(int n, char *str[]){
 	//Your codes here
