@@ -12,6 +12,13 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+void printword(char *str,int start,int end ){
+	int len = strlen(str);
+	for(int i=start;i<=end;i++){
+		printf("%c",str[i]);
+	}
+
+}
 
 void Ex3(char *str){
 	//Your codes here
@@ -20,17 +27,39 @@ void Ex3(char *str){
 	int end=0;
 	int startmax,endmax,startmin,endmin;
 	int min,max;
-	while(end<len){
+	while(end<=len){
 		if(end<len && str[end] != ' '){
 			end=end+1;
 		}else{
-			max=end-start+1;
-			min=end-start+1;
+			max=end-start;
+			min=end-start;
 			break;
 		}
 	}
-	
-	printf("%d",max);
+	while(end<=len){
+		if(end<len && str[end] != ' '){
+			end=end+1;
+		}else{
+			int wlen=end-start;
+			if(wlen>max){
+                max=wlen;
+                startmax=start;
+                endmax=end;
+            }
+            if(wlen<min){
+                max=wlen;
+                startmax=start;
+                endmax=end;
+            }
+
+			
+		}
+	}
+	printf("Shortest word: ");
+	printword(str,startmin,endmin);
+	printf("\n")
+	printf("Longest word: ");
+	printword(str,startmax,endmax);
 }
 
 int main(int argc, char *argv[]) {
