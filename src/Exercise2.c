@@ -53,9 +53,9 @@ void Ex2(int n, char *str[]){
 			int xet=sosanh(str[i],str[j]);
 			if(xet==1){
 				char x[100]="";
-				copy(x,str[i]);
-				copy(str[i],str[j]);
-				copy(str[j],x);
+				copy(x,str[j]);
+				copy(str[j],str[i]);
+				copy(str[i],x);
 			}
 		}
 	}
