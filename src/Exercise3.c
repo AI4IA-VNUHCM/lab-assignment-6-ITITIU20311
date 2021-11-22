@@ -25,6 +25,7 @@ void Ex3(char *str){
 		}else{
 			max=end-start+1;
 			min=end-start+1;
+			break;
 		}
 	}
 	start=0;
@@ -45,7 +46,6 @@ void Ex3(char *str){
 				endmax=end;
 			}
 			start=end+2;
-			end=start;
 		}
 	}
 }
