@@ -15,24 +15,11 @@ Ex:
 #include <math.h>
 #include <string.h>
 
-int findend(char *str,int start,int len){
-	if(str[start]=="("){
-		for(int i=start+1;i<len,i++){
-			if(str[i==""])
-		}
-	}
-}
+
 
 void Ex5(char *str){
 	//Your codes here
-	int len = strlen(str);
-	for(int i=0;i<len,i++){
-		if(str[i]=="}" || str[i]=="]" || str[i]==")"){
-			printf("Invalid!");
-		}else{
-			
-		}	
-	} 
+	
 }
 
 int main(int argc, char *argv[]) {
