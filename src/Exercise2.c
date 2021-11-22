@@ -26,7 +26,7 @@ void Ex2(int n, char *str[]){
 		for(int j=i+1;j<=n-1;j++){
 			int xet=sosanh(str[i],str[j]);
 			if(xet==1){
-				char x[]="aaaaaaaaaaa";
+				char x[]="aaaaaaaaaaaaaaaaaaaaaaaa";
 				strcpy(x,str[i]);
 				strcpy(str[i],str[j]);
 				strcpy(str[j],x);
