@@ -16,8 +16,9 @@ void Ex2(int n, char *str[]){
 	//Your codes here
 	for(int i=0;i<=n-2;i++){
 		for(int j=i+1;j<=n-1;j++){
-			if(strcmp(str[i],str[j])==1){
-				char x[]="";
+			int xet=strcmp(str[i],str[j]);
+			if(xet==-1){
+				char x[]="aaaaaaaaaaa";
 				strcpy(x,str[i]);
 				strcpy(str[i],str[j]);
 				strcpy(str[j],x);
