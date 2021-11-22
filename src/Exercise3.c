@@ -20,7 +20,7 @@ void Ex3(char *str){
 	int startmax,endmax,startmin,endmin;
 	int min=1,max=1;
 	while(end<len){
-		if(end<len && str[end]!=' '){
+		if(end<len && str[end] != ' '){
 			end++;
 		}else{
 			max=end-start+1;
@@ -31,7 +31,7 @@ void Ex3(char *str){
 	start=0;
 	end=0;
 	while(end<len){
-		if(end<len && str[end]!=' '){
+		if(end<len && str[end] != ' '){
 			end++;
 		}else{
 			int wlen=end-start+1;
