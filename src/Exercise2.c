@@ -21,7 +21,31 @@ int sosanh(const char *s1, const char *s2)
 	    return 0;
     return ((*(unsigned char *)s1 < *(unsigned char *)s2) ? -1 : +1);
 }
-
+char* copy(char* destination, const char* source)
+{
+    // return if no memory is allocated to the destination
+    if (destination == NULL) {
+        return NULL;
+    }
+ 
+    // take a pointer pointing to the beginning of the destination string
+    char *ptr = destination;
+ 
+    // copy the C-string pointed by source into the array
+    // pointed by destination
+    while (*source != '\0')
+    {
+        *destination = *source;
+        destination++;
+        source++;
+    }
+ 
+    // include the terminating null character
+    *destination = '\0';
+ 
+    // the destination is returned by standard `strcpy()`
+    return ptr;
+}
 void Ex2(int n, char *str[]){
 	//Your codes here
 	for(int i=0;i<=n-2;i++){
@@ -29,9 +53,9 @@ void Ex2(int n, char *str[]){
 			int xet=sosanh(str[i],str[j]);
 			if(xet==1){
 				char x[40]="";
-				strcpy(x,str[i]);
-				strcpy(str[i],str[j]);
-				strcpy(str[j],x);
+				copy(x,str[i]);
+				copy(str[i],str[j]);
+				copy(str[j],x);
 			}
 		}
 	}
