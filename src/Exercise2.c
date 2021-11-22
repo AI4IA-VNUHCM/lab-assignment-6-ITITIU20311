@@ -17,10 +17,10 @@ void Ex2(int n, char *str[]){
 	for(int i=0;i<=n-2;i++){
 		for(int j=i+1;j<=n-1;j++){
 			if(strcmp(str[i],str[j])==1){
-				char x;
-				strcpy(x,str[i]);
+				char *x;
+				strcpy(*x,str[i]);
 				strcpy(str[i],str[j]);
-				strcpy(str[j],x);
+				strcpy(str[j],*x);
 			}
 		}
 	}
