@@ -15,6 +15,8 @@ Ex:
 #include <math.h>
 #include <string.h>
 
+
+
 void Ex5(char *str){
 	//Your codes here
 	
