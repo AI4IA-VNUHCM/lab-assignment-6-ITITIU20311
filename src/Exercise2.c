@@ -51,7 +51,7 @@ void Ex2(int n, char *str[]){
 	for(int i=0;i<=n-2;i++){
 		for(int j=i+1;j<=n-1;j++){
 			int xet=sosanh(str[i],str[j]);
-			if(xet==1){
+			if(xet==-1){
 				char x[100];
 				copy(x,str[j]);
 				copy(str[j],str[i]);
@@ -59,7 +59,7 @@ void Ex2(int n, char *str[]){
 			}
 		}
 	}
-	for(int i=0;i<=n-1;i++){
+	for(int i=n-1;i>=0;i--){
 		printf(" %s",str[i]);
 	}
 }
